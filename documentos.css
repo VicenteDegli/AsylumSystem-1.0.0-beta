@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+span.forms{
+	position: relative;
+	height: auto;
+	width: 38%;
+	margin-top: 2%;
+	margin-left: 9.5%;
+	float: left;
+	text-align: left;
+	/* [disabled]outline: 1px solid #003399; */
+}

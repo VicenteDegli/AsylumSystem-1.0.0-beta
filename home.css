@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+#usuario{
+	position: absolute;
+	background-color:transparent;
+	/*outline: 1px solid #003399;*/ 
+	width: 500px;
+	height: 30px;
+	margin-top:0px;
+	margin-bottom:10px;
+	text-align:left;
+	font-size:18px;
+	font-style:italic;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#fff;
+	top:11px;
+	left:15px;
+	z-index:3;
+}
+
+#cabecalho{
+	position: absolute;
+	/* [disabled]outline: 1px solid #003399; */
+	top: 0%;
+	right: 0px;
+	width: calc(100%);
+	height: 82px;
+	z-index: 2;
+}
+
+#imgpos {
+	position: absolute;
+	width: 50px;
+	height: 15px;
+	right: 15px; /* posiciona a 90px para a esquerda */
+	top: 12px; /* posiciona a 70px para baixo */
+	z-index: 3;
+}
+
+#esquerda{
+	position: absolute;
+	float: left;
+	/* [disabled]outline: 1px solid #003399; */
+	left: 0%;
+	margin-left: calc(0%);
+	top: 82px;
+	width: 82px;
+	height: calc(100% - 82px);
+	background-image: url(imagens/lateral.gif); /*corel 6,8 largura*/
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+#direita{
+	position: absolute;
+	float: right;
+	/* [disabled]outline: 1px solid #003399; */
+	right: 0%;
+	top: 82px;
+	width: 82px;
+	height: calc(100% - 82px);
+	margin-right: calc(0%);
+	background-image: url(imagens/lateral.gif); /*corel 6,8 largura*/
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+#rodape{
+	position: absolute;
+	top: calc(100% - 75px);
+	width: calc(100% - 164px);
+	left: calc(50%);
+	margin-left: calc((100% - 164px) / -2);
+	height: 75px;
+	/* [disabled]outline: solid 1px #FF0000; */
+	background-image: url(imagens/rodape.gif);
+	background-repeat: repeat-x;
+	z-index: 2;
+}
+
+
+
+
+/*(MENU DROP DOWN)Removendo bullets e colocando borda*/
+*{
+	margin: 0; 
+	padding: 0;
+}
+ 
+/**/
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+ 
+/**/
+.menu{
+	list-style: none;
+	/* [disabled]border:1px solid #c0c0c0; */
+	float: left;
+	z-index: 3;
+}
+
+/*Estilizando itens do menu*/
+.menu li{
+	position:relative;
+	float:left;
+	border-right:1px solid #000000;
+	width:200px;
+	height:35px;
+	left:82px;
+	top:82px;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	color:#FFF;
+	cursor:pointer;
+	background:#484637;
+	z-index:3;
+
+}
+
+/* Estilizando links*/
+.menu li a{ 
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block;
+	width:180px;
+	height:25px;
+	text-align:left;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+	color:#26FF00;
+	background:#25565A;
+}
+
+/**/ 
+.menu li a:hover{
+	background:#333;
+	color:#fff;
+	-moz-box-shadow:0 3px 10px 0 #CCC;
+	-webkit-box-shadow:0 3px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #fff;
+}
+
+/*Escondendo submenu*/
+.menu li  ul{
+	position:absolute;
+	top:-47px;
+	left:-82px;
+	background-color:transparent;
+	display:none;
+} 
+
+
+/*Exibindo submenu*/
+.menu li:hover ul, .menu li.over ul{
+	display:block;
+}
+
+/*Ajustes finais*/
+.menu li ul li{
+	border:1px solid #000;
+	display:block;
+}

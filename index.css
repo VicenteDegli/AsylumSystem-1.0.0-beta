@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+#enter{
+	position: relative;
+	top: 3px;
+	width: 65px;
+	height: 21px;
+	z-index: 3;
+}
+
+#cabecalho{
+	position: absolute;
+	/* [disabled]outline: 1px solid #003399; */
+	top: 0%;
+	right: 0px;
+	width: calc(100%);
+	height: 82px;
+	z-index: 2;
+}
+
+#esquerda{
+	position: absolute;
+	float: left;
+	/* [disabled]outline: 1px solid #003399; */
+	left: 0%;
+	margin-left: calc(0%);
+	top: 82px;
+	width: 82px;
+	height: calc(100% - 82px);
+	background-image: url(imagens/lateral.gif); /*corel 6,8 largura*/
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+#direita{
+	position: absolute;
+	float: right;
+	/* [disabled]outline: 1px solid #003399; */
+	right: 0%;
+	top: 82px;
+	width: 82px;
+	height: calc(100% - 82px);
+	margin-right: calc(0%);
+	background-image: url(imagens/lateral.gif); /*corel 6,8 largura*/
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+#form_login{
+	position: absolute;
+	text-align:left;
+	color:#fff;
+	background-image:url(imagens/img_form.gif);
+	width:540px;
+	left:50%;
+	margin-left:-270px;
+	top:82px;
+	height: 70px;
+	z-index: 2;
+}
+
+span.auto{
+	position: relative;
+	width: auto;
+	height: auto;
+	left: 0px;
+	margin-left: 1%;
+	margin-top: 0%;
+	/* [disabled]border: 1px solid #000; */
+	float: left;
+	text-align: left;
+}
+
+#rodape{
+	position: absolute;
+	top: calc(100% - 75px);
+	width: calc(100% - 164px);
+	left: calc(50%);
+	margin-left: calc((100% - 164px) / -2);
+	height: 75px;
+	/* [disabled]outline: solid 1px #FF0000; */
+	background-image: url(imagens/rodape.gif);
+	background-repeat: repeat-x;
+	z-index: 2;
+}
+
+
+
